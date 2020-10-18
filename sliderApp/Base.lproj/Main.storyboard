@@ -74,6 +74,9 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-zW-gmQ">
                                         <rect key="frame" x="-2" y="0.0" width="228" height="31"/>
+                                        <connections>
+                                            <action selector="redSliderMove" destination="BYZ-38-t0r" eventType="valueChanged" id="RVX-YN-A0o"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ABk-YX-oIB">
                                         <rect key="frame" x="-2" y="30" width="228" height="31"/>
@@ -99,6 +102,15 @@
                             <constraint firstItem="FWU-4t-KDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="vFR-Qk-BAm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabelNumber" destination="e36-v1-nUx" id="gxr-xc-ILd"/>
+                        <outlet property="blueSlider" destination="tQU-sM-pdt" id="mEk-ul-tLC"/>
+                        <outlet property="greenLabelNumber" destination="zP9-37-8yt" id="Ibs-84-pdy"/>
+                        <outlet property="greenSlider" destination="ABk-YX-oIB" id="CAm-du-PTy"/>
+                        <outlet property="redLabelNumber" destination="HIZ-mV-Mhc" id="RuT-zq-05g"/>
+                        <outlet property="redSlider" destination="bVF-zW-gmQ" id="W9I-eR-Yxm"/>
+                        <outlet property="unitedColorLabel" destination="FWU-4t-KDy" id="hlN-Ke-FXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
